@@ -7,3 +7,12 @@
 */
 
 "app_title" = "Simple Album List";
+"decoding_fail" = "Decoding fail";
+"albums" = "Albums";
+"album" = "Album";
+"photos" = "Photos";
+"photo" = "Photo";
+"error" = "Error";
+"close" = "Close";
+"no_results" = "No results";
+"reload" = "Reload";

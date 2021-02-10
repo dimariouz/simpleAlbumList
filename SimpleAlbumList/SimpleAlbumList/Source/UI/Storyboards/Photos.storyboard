@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photos View-->
+        <scene sceneID="xTK-QJ-XgB">
+            <objects>
+                <viewController storyboardIdentifier="PhotosView" id="8KU-fz-dBQ" customClass="PhotosView" customModule="SimpleAlbumList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EzF-oQ-L4Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3d4-ri-7dZ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1t-3m-n6p" customClass="EmptyDataView" customModule="SimpleAlbumList" customModuleProvider="target">
+                                <rect key="frame" x="52" y="375.5" width="310.5" height="155"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="q1t-3m-n6p" secondAttribute="height" multiplier="2:1" id="zav-bB-o5t"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MMe-f4-1sI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q1t-3m-n6p" firstAttribute="width" secondItem="EzF-oQ-L4Q" secondAttribute="width" multiplier="0.75" id="65h-iI-XWR"/>
+                            <constraint firstItem="MMe-f4-1sI" firstAttribute="bottom" secondItem="3d4-ri-7dZ" secondAttribute="bottom" id="8ac-Qk-k7o"/>
+                            <constraint firstItem="q1t-3m-n6p" firstAttribute="centerX" secondItem="MMe-f4-1sI" secondAttribute="centerX" id="HED-3a-ZaH"/>
+                            <constraint firstItem="3d4-ri-7dZ" firstAttribute="top" secondItem="MMe-f4-1sI" secondAttribute="top" id="Ij8-YY-YHN"/>
+                            <constraint firstItem="q1t-3m-n6p" firstAttribute="centerY" secondItem="MMe-f4-1sI" secondAttribute="centerY" id="UTu-vz-Lz0"/>
+                            <constraint firstItem="3d4-ri-7dZ" firstAttribute="leading" secondItem="MMe-f4-1sI" secondAttribute="leading" id="cXg-fZ-z8w"/>
+                            <constraint firstItem="MMe-f4-1sI" firstAttribute="trailing" secondItem="3d4-ri-7dZ" secondAttribute="trailing" id="loH-fq-sOK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emptyDataView" destination="q1t-3m-n6p" id="RsW-qZ-WTP"/>
+                        <outlet property="photosCollectionBgView" destination="3d4-ri-7dZ" id="owJ-CE-E6D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2rv-r3-O2K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-187" y="137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

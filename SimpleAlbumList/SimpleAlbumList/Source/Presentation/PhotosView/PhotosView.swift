@@ -95,6 +95,12 @@ extension PhotosView: UICollectionViewDataSource {
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        let animation = AnimationFactory.makeFadeAnimation(duration: cellAnimationDuration, delayFactor: cellAnimationDelay)
+        let animator = Animator(animation: animation)
+        animator.animate(cell: cell, at: indexPath, in: collectionView)
+    }
+    
 }
 
 extension PhotosView: UICollectionViewDelegateFlowLayout {

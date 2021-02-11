@@ -20,6 +20,9 @@ class RootViewController: UIViewController, ActivityIndicatorPresenter, AlertPre
         activityIndicator.hidesWhenStopped = true
         return activityIndicator
     }()
+    
+    let cellAnimationDuration: TimeInterval= 0.5
+    let cellAnimationDelay: TimeInterval = 0.05
 
     override func viewDidLoad() {
         super.viewDidLoad()

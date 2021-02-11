@@ -45,6 +45,7 @@
 		D816042425D47C3A005FFD7E /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D816042325D47C3A005FFD7E /* AlertPresenter.swift */; };
 		D816042825D480A3005FFD7E /* EmptyDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D816042725D480A3005FFD7E /* EmptyDataView.swift */; };
 		D816042B25D480B9005FFD7E /* EmptyDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D816042A25D480B9005FFD7E /* EmptyDataView.xib */; };
+		D816042E25D51E09005FFD7E /* AnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D816042D25D51E09005FFD7E /* AnimationFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		D816042325D47C3A005FFD7E /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
 		D816042725D480A3005FFD7E /* EmptyDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDataView.swift; sourceTree = "<group>"; };
 		D816042A25D480B9005FFD7E /* EmptyDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyDataView.xib; sourceTree = "<group>"; };
+		D816042D25D51E09005FFD7E /* AnimationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationFactory.swift; sourceTree = "<group>"; };
 		FADE0A3FB9CF3A53CCDCC547 /* Pods-SimpleAlbumList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAlbumList.debug.xcconfig"; path = "Target Support Files/Pods-SimpleAlbumList/Pods-SimpleAlbumList.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -302,6 +304,7 @@
 				D81603EB25D40B26005FFD7E /* CollectionViewFactory.swift */,
 				D81603FD25D412D3005FFD7E /* ActivityIndicatorPresenter.swift */,
 				D816042325D47C3A005FFD7E /* AlertPresenter.swift */,
+				D816042D25D51E09005FFD7E /* AnimationFactory.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -501,6 +504,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D816040225D41610005FFD7E /* PhotosView.swift in Sources */,
+				D816042E25D51E09005FFD7E /* AnimationFactory.swift in Sources */,
 				D816037F25D3CFCF005FFD7E /* AppDelegate.swift in Sources */,
 				D81603A625D3D83C005FFD7E /* SplashView.swift in Sources */,
 				D81603F325D40D9D005FFD7E /* AlbumCell.swift in Sources */,

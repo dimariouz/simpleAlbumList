@@ -19,6 +19,11 @@ final class SplashView: RootViewController {
         routeToAlbumsView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setNavigationBarHidden(true)
+    }
+    
     private func setupUI() {
         titleLabel.text = "app_title".localized
     }

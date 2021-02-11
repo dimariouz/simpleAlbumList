@@ -21,13 +21,14 @@ class RootViewController: UIViewController, ActivityIndicatorPresenter, AlertPre
         return activityIndicator
     }()
     
-    let cellAnimationDuration: TimeInterval= 0.5
+    let cellAnimationDuration: TimeInterval = 0.5
     let cellAnimationDelay: TimeInterval = 0.05
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupBackgroundColor()
+        setNavigationBarHidden()
     }
     
     func setupBackgroundColor() {
@@ -40,6 +41,10 @@ class RootViewController: UIViewController, ActivityIndicatorPresenter, AlertPre
     
     func push(to view: UIViewController) {
         self.navigationController?.pushViewController(view, animated: true)
+    }
+    
+    func setNavigationBarHidden(_ isHidden: Bool = false) {
+        navigationController?.navigationBar.isHidden = isHidden
     }
     
     func setBackButtonHidden(_ isHidden: Bool) {
